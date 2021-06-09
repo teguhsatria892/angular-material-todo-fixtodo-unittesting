@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { MatCheckboxChange } from '@angular/material';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 
 import { ToDo } from '../../state/todo/todo.model'
 
@@ -21,6 +21,10 @@ export class TodoListComponent {
       ...toDo,
       complete: change.checked
     });
+  }
+
+  testOutPut(number1: number, number2: number) {
+    return number1+number2;
   }
 
 }
